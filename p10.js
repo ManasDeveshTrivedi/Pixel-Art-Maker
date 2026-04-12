@@ -83,3 +83,8 @@ gridButton.addEventListener("click", () => {
           col.style.backgroundColor = colorButton.value;
         }
       });
+
+      col.addEventListener(events[deviceType].move, (e) => {
+        /* elementFromPoint returns the element at x,y position of mouse */
+        let elementId = document.elementFromPoint(
+          !isTouchDevice() ? e.clientX : e.touches[0].clientX,

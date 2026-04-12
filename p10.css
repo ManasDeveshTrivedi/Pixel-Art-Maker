@@ -84,3 +84,7 @@ input[type="color"]::-moz-color-swatch {
   border: 1px solid #ddd;
 }
 
+.gridRow {
+  display: flex;
+}
+

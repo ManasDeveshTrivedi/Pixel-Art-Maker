@@ -58,3 +58,8 @@ gridButton.addEventListener("click", () => {
     //Create row div
     let div = document.createElement("div");
     div.classList.add("gridRow");
+    //Create Columns
+    for (let j = 0; j < gridWidth.value; j++) {
+      count += 2;
+      let col = document.createElement("div");
+      col.classList.add("gridCol");

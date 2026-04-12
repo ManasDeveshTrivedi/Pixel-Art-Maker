@@ -93,3 +93,8 @@ gridButton.addEventListener("click", () => {
         //checker
         checker(elementId);
       });
+      //Stop drawing
+      col.addEventListener(events[deviceType].up, () => {
+        draw = false;
+      });
+      //append columns

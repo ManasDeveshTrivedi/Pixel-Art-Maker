@@ -18,3 +18,8 @@ let events = {
     up: "mouseup",
   },
   touch: {
+    down: "touchstart",
+    move: "touchmove",
+    up: "touchend",
+  },
+};

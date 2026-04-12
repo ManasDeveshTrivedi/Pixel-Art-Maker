@@ -73,3 +73,8 @@ gridButton.addEventListener("click", () => {
       the statement for event would be events[touch].down which equals to touchstart
        */
 
+      col.addEventListener(events[deviceType].down, () => {
+        //user starts drawing
+        draw = true;
+        //if erase = true then background = transparent else color
+        if (erase) {

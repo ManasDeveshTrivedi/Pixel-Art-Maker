@@ -43,3 +43,8 @@ const isTouchDevice = () => {
   }
 };
 
+isTouchDevice();
+
+//Create Grid
+gridButton.addEventListener("click", () => {
+  //Initially clear the grid (old grids cleared)

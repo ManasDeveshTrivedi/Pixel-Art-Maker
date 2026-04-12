@@ -113,3 +113,8 @@ function checker(elementId) {
       if (draw && !erase) {
         element.style.backgroundColor = colorButton.value;
       } else if (draw && erase) {
+        element.style.backgroundColor = "transparent";
+      }
+    }
+  });
+}

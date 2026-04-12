@@ -168,3 +168,4 @@ themeToggle.addEventListener("click", () => {
     themeToggle.innerText = "🌙 Dark";
     localStorage.setItem("theme", "light");
   }
+});

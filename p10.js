@@ -33,3 +33,8 @@ let erase = false;
 //Detect touch device
 const isTouchDevice = () => {
   try {
+    //We try to create TouchEvent(it would fail for desktops and throw error)
+    document.createEvent("TouchEvent");
+    deviceType = "touch";
+    return true;
+  } catch (e) {

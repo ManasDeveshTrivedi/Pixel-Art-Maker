@@ -53,3 +53,8 @@ gridButton.addEventListener("click", () => {
   let count = 0;
   //loop for creating rows
   for (let i = 0; i < gridHeight.value; i++) {
+    //incrementing count by 2
+    count += 2;
+    //Create row div
+    let div = document.createElement("div");
+    div.classList.add("gridRow");

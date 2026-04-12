@@ -158,3 +158,8 @@ if (localStorage.getItem("theme") === "dark") {
   themeToggle.innerText = "☀️ Light";
 }
 
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    themeToggle.innerText = "☀️ Light";

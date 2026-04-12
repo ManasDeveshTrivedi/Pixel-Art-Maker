@@ -98,3 +98,8 @@ gridButton.addEventListener("click", () => {
         draw = false;
       });
       //append columns
+      div.appendChild(col);
+    }
+    //append grid to container
+    container.appendChild(div);
+  }

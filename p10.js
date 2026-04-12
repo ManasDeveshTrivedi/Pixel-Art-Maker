@@ -128,3 +128,8 @@ eraseBtn.addEventListener("click", () => {
   erase = true;
 });
 
+//Paint button
+paintBtn.addEventListener("click", () => {
+  erase = false;
+});
+

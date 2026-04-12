@@ -148,3 +148,8 @@ window.onload = () => {
   gridWidth.value = 0;
   gridHeight.value = 0;
 };
+
+/* 🌙 Dark Mode Toggle */
+const themeToggle = document.getElementById("theme-toggle");
+
+// Load saved theme

@@ -78,3 +78,8 @@ gridButton.addEventListener("click", () => {
         draw = true;
         //if erase = true then background = transparent else color
         if (erase) {
+          col.style.backgroundColor = "transparent";
+        } else {
+          col.style.backgroundColor = colorButton.value;
+        }
+      });

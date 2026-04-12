@@ -63,3 +63,8 @@ gridButton.addEventListener("click", () => {
       count += 2;
       let col = document.createElement("div");
       col.classList.add("gridCol");
+      /* We need unique ids for all columns (for touch screen specifically) */
+      col.setAttribute("id", `gridCol${count}`);
+
+      /*
+      For eg if deviceType = "mouse"

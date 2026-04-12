@@ -103,3 +103,8 @@ gridButton.addEventListener("click", () => {
     //append grid to container
     container.appendChild(div);
   }
+});
+function checker(elementId) {
+  let gridColumns = document.querySelectorAll(".gridCol");
+  //loop through all boxes
+  gridColumns.forEach((element) => {

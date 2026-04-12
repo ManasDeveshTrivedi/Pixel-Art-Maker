@@ -48,3 +48,8 @@ isTouchDevice();
 //Create Grid
 gridButton.addEventListener("click", () => {
   //Initially clear the grid (old grids cleared)
+  container.innerHTML = "";
+  //count variable for generating unique ids
+  let count = 0;
+  //loop for creating rows
+  for (let i = 0; i < gridHeight.value; i++) {

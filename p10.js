@@ -23,3 +23,8 @@ let events = {
     up: "touchend",
   },
 };
+
+let deviceType = "";
+
+//Initially draw and erase would be false
+let draw = false;

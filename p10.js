@@ -13,3 +13,8 @@ let heightValue = document.getElementById("height-value");
 //Events object
 let events = {
   mouse: {
+    down: "mousedown",
+    move: "mousemove",
+    up: "mouseup",
+  },
+  touch: {

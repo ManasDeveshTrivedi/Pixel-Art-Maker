@@ -38,3 +38,8 @@ const isTouchDevice = () => {
     deviceType = "touch";
     return true;
   } catch (e) {
+    deviceType = "mouse";
+    return false;
+  }
+};
+

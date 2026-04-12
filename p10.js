@@ -68,3 +68,8 @@ gridButton.addEventListener("click", () => {
 
       /*
       For eg if deviceType = "mouse"
+      the statement for the event would be events[mouse].down which equals to mousedown
+      if deviceType="touch"
+      the statement for event would be events[touch].down which equals to touchstart
+       */
+

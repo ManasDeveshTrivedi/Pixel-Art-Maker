@@ -31,3 +31,9 @@ label {
   display: block;
 }
 
+span {
+  position: relative;
+  font-size: 22px;
+  bottom: -1px;
+}
+

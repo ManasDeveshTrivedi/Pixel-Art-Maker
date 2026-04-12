@@ -105,3 +105,8 @@ body.dark .wrapper {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
+body.dark button {
+  background-color: #5a67d8;
+  color: white;
+}
+

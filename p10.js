@@ -59,14 +59,12 @@ gridButton.addEventListener("click", () => {
       col.classList.add("gridCol");
       /* We need unique ids for all columns (for touch screen specifically) */
       col.setAttribute("id", `gridCol${count}`);
-
       /*
       For eg if deviceType = "mouse"
       the statement for the event would be events[mouse].down which equals to mousedown
       if deviceType="touch"
       the statement for event would be events[touch].down which equals to touchstart
        */
-
       col.addEventListener(events[deviceType].down, () => {
         //user starts drawing
         draw = true;
@@ -77,7 +75,6 @@ gridButton.addEventListener("click", () => {
           col.style.backgroundColor = colorButton.value;
         }
       });
-
       col.addEventListener(events[deviceType].move, (e) => {
         /* elementFromPoint returns the element at x,y position of mouse */
         let elementId = document.elementFromPoint(

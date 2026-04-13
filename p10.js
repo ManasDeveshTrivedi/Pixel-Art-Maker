@@ -130,24 +130,19 @@ gridHeight.addEventListener("input", () => {
   heightValue.innerHTML =
     gridHeight.value < 9 ? `0${gridHeight.value}` : gridHeight.value;
 });
-
 window.onload = () => {
   gridWidth.value = 0;
   gridHeight.value = 0;
 };
-
 /* 🌙 Dark Mode Toggle */
 const themeToggle = document.getElementById("theme-toggle");
-
 // Load saved theme
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   themeToggle.innerText = "☀️ Light";
 }
-
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-
   if (document.body.classList.contains("dark")) {
     themeToggle.innerText = "☀️ Light";
     localStorage.setItem("theme", "dark");

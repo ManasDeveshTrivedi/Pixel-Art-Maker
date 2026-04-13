@@ -48,7 +48,6 @@ button {
 button:hover {
   background-color: #357abd;
 }
-
 input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -75,37 +74,30 @@ input[type="color"]::-moz-color-swatch {
 .gridRow {
   display: flex;
 }
-
 @media only screen and (max-width: 768px) {
   .gridCol {
     height: 0.8em;
     width: 0.8em;
   }
 }
-
 body.dark {
   background: linear-gradient(135deg, #141e30, #243b55);
 }
-
 body.dark .wrapper {
   background-color: #2f2f3f;
   color: #ffffff;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
-
 body.dark button {
   background-color: #5a67d8;
   color: white;
 }
-
 body.dark button:hover {
   background-color: #434190;
 }
-
 body.dark input[type="color"] {
   border: 2px solid #fff;
 }
-
 body.dark .gridCol {
   border: 1px solid #444;
 }

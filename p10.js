@@ -9,7 +9,6 @@ let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
 let widthValue = document.getElementById("width-value");
 let heightValue = document.getElementById("height-value");
-
 //Events object
 let events = {
   mouse: {
@@ -23,13 +22,10 @@ let events = {
     up: "touchend",
   },
 };
-
 let deviceType = "";
-
 //Initially draw and erase would be false
 let draw = false;
 let erase = false;
-
 //Detect touch device
 const isTouchDevice = () => {
   try {
@@ -42,9 +38,7 @@ const isTouchDevice = () => {
     return false;
   }
 };
-
 isTouchDevice();
-
 //Create Grid
 gridButton.addEventListener("click", () => {
   //Initially clear the grid (old grids cleared)
